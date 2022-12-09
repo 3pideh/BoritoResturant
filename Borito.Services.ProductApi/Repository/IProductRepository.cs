@@ -9,7 +9,7 @@ namespace Borito.Services.ProductApi.Repository
     public interface IProductRepository
     {
         public Task<IEnumerable<ProductDto>> GetProducts();
-        public Task<ProductDto> GetProductById(int productId);
+        public Task<ProductDto> GetProductById(int id);
         public Task<ProductDto> CreateUpdateProduct(ProductDto productDto);
         public Task<bool> DeleteProduct(int productId);
 

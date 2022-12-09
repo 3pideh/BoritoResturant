@@ -19,6 +19,7 @@ namespace Borito.Services.ProductApi.Controllers
             _productRepository = productRepository;
             this._response = new ResponseDto();
         }
+        [HttpGet]
         public async Task<ResponseDto> Get()
         {
             try
@@ -37,11 +38,11 @@ namespace Borito.Services.ProductApi.Controllers
 
         [HttpGet]
         [Route("{id}")]
-        public async Task<ResponseDto> Get(int productId)
+        public async Task<ResponseDto> Get(int id)
         {
             try
             {
-                ProductDto productDto = await _productRepository.GetProductById(productId);
+                ProductDto productDto = await _productRepository.GetProductById(id);
                 _response.Result = productDto;
             }
             catch (Exception ex)
@@ -88,11 +89,11 @@ namespace Borito.Services.ProductApi.Controllers
         }
 
         [HttpDelete]
-        public async Task<ResponseDto> Delete(int productId)
+        public async Task<ResponseDto> Delete(int id)
         {
             try
             {
-                bool isSuccess = await _productRepository.DeleteProduct(productId);
+                bool isSuccess = await _productRepository.DeleteProduct(id);
                 _response.Result = isSuccess;
             }
             catch (Exception ex)

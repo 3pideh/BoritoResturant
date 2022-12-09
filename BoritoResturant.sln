@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{414CF8FC-5859-43BB-9618-E7C5E78C5ABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borito.WEB", "Borito.WEB\Borito.WEB.csproj", "{07F44FF8-1908-45D8-A410-4CC5E27AD076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Borito.WEB", "Borito.WEB\Borito.WEB.csproj", "{07F44FF8-1908-45D8-A410-4CC5E27AD076}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0FEA7D77-487B-4AF0-B256-27CA18E689B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Borito.Services.ProductApi", "Borito.Services.ProductApi\Borito.Services.ProductApi.csproj", "{70B716A3-9B7F-4E64-B9DA-CBC812F9D048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Borito.Services.ProductApi", "Borito.Services.ProductApi\Borito.Services.ProductApi.csproj", "{70B716A3-9B7F-4E64-B9DA-CBC812F9D048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

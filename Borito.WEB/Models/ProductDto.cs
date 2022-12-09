@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Borito.Services.ProductApi.Models.DTO
+namespace Borito.WEB.Models.DTO
 {
     public class ProductDto
     {
@@ -12,7 +12,7 @@ namespace Borito.Services.ProductApi.Models.DTO
         public double Price { get; set; }
         public string CategoryName { get; set; }
         public string ImageUrl { get; set; }
-
         public string Description { get; set; }
+
     }
 }
