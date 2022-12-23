@@ -1,5 +1,6 @@
 ﻿using Borito.Services.ProductApi.Models.DTO;
 using Borito.Services.ProductApi.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace Borito.Services.ProductApi.Controllers
             this._response = new ResponseDto();
         }
         [HttpGet]
+     
         public async Task<ResponseDto> Get()
         {
             try
@@ -55,6 +57,7 @@ namespace Borito.Services.ProductApi.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ResponseDto> Post([FromBody] ProductDto productDto)
         {
             try
@@ -72,6 +75,7 @@ namespace Borito.Services.ProductApi.Controllers
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<ResponseDto> put([FromBody] ProductDto productDto)
         {
             try
@@ -89,6 +93,7 @@ namespace Borito.Services.ProductApi.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public async Task<ResponseDto> Delete(int id)
         {
             try
